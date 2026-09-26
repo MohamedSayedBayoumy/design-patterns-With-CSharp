@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using static ultimate_design_patterns_With_CSharp.Solid.PaymentProcess;
 
 namespace ultimate_design_patterns_With_CSharp.Solid
 {
@@ -14,7 +13,7 @@ namespace ultimate_design_patterns_With_CSharp.Solid
             PaymentProcess = paymentProcess;
         }
 
-        public void Pay(Order order)
+        public void Pay(OrderModel order)
         {
             PaymentProcess.Process(order);
         }

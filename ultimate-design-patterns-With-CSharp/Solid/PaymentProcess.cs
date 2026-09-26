@@ -41,17 +41,17 @@ namespace ultimate_design_patterns_With_CSharp.Solid
     #region Open & Close Principls
 
     // Rember Open & Close Principls Explain Abstract and interface 
-    // But we Take Desion to use each of them based on Case
+    // But we Take Decision to use each of them based on Case
     // in this Case we use interface because we want to implement it in different classes for each payment type
 
     public interface IPaymentProcess
     {
-        public void Process(Order order);
+        public void Process(OrderModel order);
     }
 
     public class VisaCardPayments : IPaymentProcess
     {
-        public void Process(Order order)
+        public void Process(OrderModel order)
         {
             Console.WriteLine("Processing visa card payments...");
         }
@@ -59,11 +59,11 @@ namespace ultimate_design_patterns_With_CSharp.Solid
 
     public class MasterCardPayments : IPaymentProcess
     {
-        public void Process(Order order)
+        public void Process(OrderModel order)
         {
             Console.WriteLine("Processing master card payments...");
         }
     }
     #endregion
 }
-}
+

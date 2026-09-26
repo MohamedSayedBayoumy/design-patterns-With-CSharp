@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ultimate_design_patterns_With_CSharp.Solid
 {
-    public class Order
+    public class OrderModel
     {
         public string Name { get; set; }
         public decimal TotalPrice { get; set; }

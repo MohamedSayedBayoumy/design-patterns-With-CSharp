@@ -6,12 +6,12 @@ namespace ultimate_design_patterns_With_CSharp.Solid
 {
     public class OrderManager
     {
-        public void ProcessOrder(Order order)
+        public void ProcessOrder(OrderModel order)
         {
             Console.WriteLine($"Processing order: {order.Name} now...");
         }
 
-        public void ProcessPayment(Order order, PaymentModel payment)
+        public void ProcessPayment(OrderModel order, PaymentModel payment)
         {
             Console.WriteLine($"Processing payment of order: {order.Name}");
             Console.WriteLine($"Issuing payment for amount: {order.TotalPrice}");
