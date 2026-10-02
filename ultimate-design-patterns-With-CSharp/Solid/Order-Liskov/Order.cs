@@ -4,18 +4,20 @@ using System.Text;
 
 namespace ultimate_design_patterns_With_CSharp.Solid.Order_Liskov
 {
-    internal class Order
+    internal abstract class Order
     {
-        public Order(int price, int count, int fees)
+        protected Order(int price, int countOfItems, int fees)
         {
             Price = price;
-            Count = count;
+            CountOfItems = countOfItems;
             Fees = fees;
         }
 
         public int Price { get; set; }
-        public int Count { get; set; }
-        public int Fees { get; set; } = 100;
+        public int CountOfItems { get; set; }
 
+        public int Fees { get; set; }
+
+        public abstract double CalculateTotalPrice();
     }
 }

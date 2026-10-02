@@ -20,11 +20,7 @@ namespace ultimate_design_patterns_With_CSharp
             #endregion
 
             #region Liskov
-            PickUpOrder childOrder = new PickUpOrder(100, 2, 10);
-            Order parentOrder = new Order(100, 2, 10);
-
-            Console.WriteLine($"Parent Price: {parentOrder.Price}");
-            Console.WriteLine($"Child Price: {childOrder.Price}");
+             
 
             #endregion
 
